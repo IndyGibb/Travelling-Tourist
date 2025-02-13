@@ -31,11 +31,11 @@ bool city::isCityConnected(string cityName) {
 	return false;
 }
 
-bool city::isCityConnected(city cityName) {
+bool city::isCityConnected(city otherCity) {
 	return isCityConnected(cityName.getCityName());
 }
 
-bool city::isConnectedCityInCommon(city cityName) {
+bool city::isConnectedCityInCommon(city otherCity) {
 	for (int i = 0; i < connectedCities.size(); i++) {
 		if (cityName.isCityConnected(connectedCities[i])) {
 			return true;
