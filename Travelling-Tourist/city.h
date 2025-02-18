@@ -1,3 +1,5 @@
+// City Class Header File created by: Andrew Gibbons, 2025
+
 #pragma once
 #ifndef CITY_H
 #define CITY_H

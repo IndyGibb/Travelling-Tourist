@@ -1,3 +1,5 @@
+// City Class Implimentation File created by: Andrew Gibbons, 2025
+
 #include "city.h"
 
 city::city() {
