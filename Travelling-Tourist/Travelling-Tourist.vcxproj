@@ -132,12 +132,14 @@
     <ClCompile Include="journeyImp.cpp" />
     <ClCompile Include="journeyTest.cpp" />
     <ClCompile Include="roadImp.cpp" />
+    <ClCompile Include="storageImp.cpp" />
     <ClCompile Include="Travelling-Tourist.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="city.h" />
     <ClInclude Include="journey.h" />
     <ClInclude Include="road.h" />
+    <ClInclude Include="storage.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\MidtermProjectSampleInput.txt" />

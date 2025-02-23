@@ -14,8 +14,8 @@ class storage {
 public:
 	storage(); //default constructor
 
-	void inputCities();// Function to imput all cities into a vector.
-	void inputRoads();// Function to input all roads into a vector.
+	void inputCity(city newCity);// Function to imput a city into a vector
+	void inputRoad(road newRoad);// Function to input a road into a vector
 	void getCity(int); //Function to return cities.
 	void getRoad(int); //Function to return roads.
 	int lineCounter(const string); //Function to count the # of lines in the file.

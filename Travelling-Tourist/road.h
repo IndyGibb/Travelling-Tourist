@@ -4,7 +4,7 @@
 #include <string>
 #include "city.h"  // Include the city class
 
-class Road {
+class road {
 private:
     city city1;        // First city object
     city city2;        // Second city object
