@@ -30,6 +30,9 @@
     <ClCompile Include="roadImp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="journeyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="city.h">
