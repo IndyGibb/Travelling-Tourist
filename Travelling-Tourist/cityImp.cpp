@@ -16,15 +16,15 @@ void city::addConnectedCity(city newCity) {
 	connectedCities.push_back(newCity);
 }
 
-string city::getCityName() {
+string city::getCityName() const {
 	return cityName;
 }
 
-double city::getCostToStay() {
+double city::getCostToStay() const {
 	return costToStay;
 }
 
-bool city::isCityConnected(string cityName) {
+bool city::isCityConnected(string cityName) const {
 	for (int i = 0; i < connectedCities.size(); i++) {
 		if (connectedCities[i].getCityName() == cityName) {
 			return true;
@@ -33,11 +33,11 @@ bool city::isCityConnected(string cityName) {
 	return false;
 }
 
-bool city::isCityConnected(city otherCity) {
+bool city::isCityConnected(city otherCity) const {
 	return isCityConnected(otherCity.getCityName());
 }
 
-bool city::isConnectedCityInCommon(city otherCity) {
+bool city::isConnectedCityInCommon(city otherCity) const {
 	for (int i = 0; i < connectedCities.size(); i++) {
 		if (otherCity.isCityConnected(connectedCities[i])) {
 			return true;

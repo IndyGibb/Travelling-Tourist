@@ -110,7 +110,7 @@ void storage::inputFile(string fileName) {
         if (tolower(c) > 'a' && tolower(c) < 'z') {
             ss << cityBName;
             ss << distance;
-            road newRoad()
+            road newRoad();
         }
 	} while (!fin.eof());
 }
