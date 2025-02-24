@@ -11,8 +11,9 @@ private:
     double travelTime; // Time to travel between the cities in hours
 
 public:
+	road(); // default constructor
     // Constructor to initialize the road with two city objects and travel time
-    Road(city c1, city c2, double time);
+    road(city c1, city c2, double time);
 
     // Getter for city1
     city getCity1() const;

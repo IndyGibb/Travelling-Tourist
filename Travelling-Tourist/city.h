@@ -15,11 +15,11 @@ public:
 	city(string name, double cost); // constructor which takes in the name of the city and the cost to stay in it, and adds it to the city object
 	
 	void addConnectedCity(city newCity); // adds a city to the connectedCities vector
-	string getCityName(); // returns cityName
-	double getCostToStay(); // returns costToStay
-	bool isCityConnected(string cityName); // returns true if the city name is in the connectedCities vector
-	bool isCityConnected(city otherCity); // returns true if the cityName of otherCity is in connectedCities
-	bool isConnectedCityInCommon(city otherCity); // returns true if any of the connectedCities of this city are in the connectedCities of otherCity
+	string getCityName() const; // returns cityName
+	double getCostToStay() const; // returns costToStay
+	bool isCityConnected(string cityName) const; // returns true if the city name is in the connectedCities vector
+	bool isCityConnected(city otherCity) const; // returns true if the cityName of otherCity is in connectedCities
+	bool isConnectedCityInCommon(city otherCity) const; // returns true if any of the connectedCities of this city are in the connectedCities of otherCity
 	
 
 private:

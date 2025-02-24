@@ -34,12 +34,12 @@ bool city::isCityConnected(string cityName) {
 }
 
 bool city::isCityConnected(city otherCity) {
-	return isCityConnected(cityName.getCityName());
+	return isCityConnected(otherCity.getCityName());
 }
 
 bool city::isConnectedCityInCommon(city otherCity) {
 	for (int i = 0; i < connectedCities.size(); i++) {
-		if (cityName.isCityConnected(connectedCities[i])) {
+		if (otherCity.isCityConnected(connectedCities[i])) {
 			return true;
 		}
 	}
