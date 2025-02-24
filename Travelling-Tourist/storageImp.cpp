@@ -63,14 +63,14 @@ int storage::getCityLocation(string cityName) {
 	return -1;
 }
 
-int storage::getRoadLocation(city city1, city city2); {
-	for (int i = 0; i < roadV.size(); i++) {
-		if (roadV[i].getCity1().getCityName() == city1.getCityName() && roadV[i].getCity2().getCityName() == city2.getCityName()) {
-			return i;
-		}
-	}
-	return -1;
-
+int storage::getRoadLocation(city city1, city city2) {
+    for (int i = 0; i < roadV.size(); i++) {
+        if (roadV[i].getCity1().getCityName() == city1.getCityName() && roadV[i].getCity2().getCityName() == city2.getCityName()) {
+            return i;
+        }
+    }
+    return -1;
+}
 void storage::inputFile(string fileName) {
     ifstream fin(fileName);
     stringstream ss;
