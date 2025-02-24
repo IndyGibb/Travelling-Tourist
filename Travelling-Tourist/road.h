@@ -15,6 +15,8 @@ public:
     // Constructor to initialize the road with two city objects and travel time
     road(city c1, city c2, double time);
 
+    ~road();
+
     // Getter for city1
     city getCity1() const;
 

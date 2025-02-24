@@ -13,6 +13,7 @@ class city {
 public:
 	city(); // default constructor
 	city(string name, double cost); // constructor which takes in the name of the city and the cost to stay in it, and adds it to the city object
+	~city(); // destructor
 	
 	void addConnectedCity(city newCity); // adds a city to the connectedCities vector
 	string getCityName() const; // returns cityName

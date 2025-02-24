@@ -10,7 +10,13 @@ using namespace std;
 
 storage::storage() {
     lines = 0;
+	cout << "Storage created" << endl;
     return;
+}
+
+storage::~storage() {
+	cout << "Storage was destroyed" << endl;
+	return;
 }
 
 int storage::lineCounter(const string fileName) {

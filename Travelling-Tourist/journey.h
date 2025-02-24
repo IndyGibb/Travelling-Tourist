@@ -32,6 +32,7 @@ public:
     Journey();
     void addDestination(const string& name, double cost, int travelTime);
     void displayJourney() const;
+    ~Journey();
 };
 
 #endif

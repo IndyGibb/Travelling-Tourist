@@ -15,6 +15,7 @@ using std::vector;
 class storage {
 public:
 	storage(); //default constructor
+	~storage();
 
 	void inputCity(city newCity); // Function to input a city into a vector
 	void inputRoad(road newRoad); // Function to input a road into a vector

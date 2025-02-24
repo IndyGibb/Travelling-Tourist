@@ -12,6 +12,10 @@ road::road(city c1, city c2, double time) {
 	cout << "Road created from " << city1.getCityName() << " to " << city2.getCityName() << " in " << travelTime << " hours." << endl;
 }
 
+road::~road() {
+	cout << "Road from " << city1.getCityName() << " to " << city2.getCityName() << " was destroyed." << endl;
+}
+
 road::road() {
     city1 = city();
     city2 = city();
