@@ -144,7 +144,10 @@
     <None Include="MidtermProject.pdf" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Miami.txt" />
     <Text Include="MidtermProjectSampleInput.txt" />
+    <Text Include="NewYork.txt" />
+    <Text Include="SanFran.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -57,5 +57,14 @@
     <Text Include="MidtermProjectSampleInput.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Miami.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="NewYork.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="SanFran.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

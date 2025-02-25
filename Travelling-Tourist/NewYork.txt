@@ -5,11 +5,20 @@ Boston,130
 Houston,170
 Dallas,160
 New York,Los Angeles,5.5
+Los Angeles,New York,5.5
 New York,Chicago,3.0
+Chicago,New York,3.0
 Los Angeles,Chicago,4.0
+Chicago,LosAngeles,4.0
 New York,Boston,2.5
+Boston,New York,2.5
 Chicago,Houston,4.5
+Houston,Chicago,4.5
 Los Angeles,Houston,6.0
+Houston,Los Angeles,6.0
 Boston,Chicago,3.5
+Chicago,Boston,3.5
 Houston,Dallas,2.0
+Dallas,Houston,2.0
 Chicago,Dallas,3.0
+Dallas,Chicago,3.0
