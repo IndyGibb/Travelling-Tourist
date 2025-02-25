@@ -122,7 +122,7 @@ void find_route(string dest_list[], double cost_list[], int time_list[], const i
     }
 }
 
-int main()
+int mainx()
 {
     string input_file_name, starting_location, from, to;
     string route[max_destinations];
