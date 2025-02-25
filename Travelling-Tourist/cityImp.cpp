@@ -56,3 +56,7 @@ bool city::isConnectedCityInCommon(city otherCity) const {
 	}
 	return false;
 }
+
+vector<string> city::getConnectedCities() const {
+	return connectedCities;
+}

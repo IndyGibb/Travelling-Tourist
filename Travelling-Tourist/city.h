@@ -21,6 +21,7 @@ public:
 	bool isCityConnected(string cityName) const; // returns true if the city name is in the connectedCities vector
 	bool isCityConnected(city otherCity) const; // returns true if the cityName of otherCity is in connectedCities
 	bool isConnectedCityInCommon(city otherCity) const; // returns true if any of the connectedCities of this city are in the connectedCities of otherCity
+	vector<string> getConnectedCities() const; // returns connectedCities
 	
 
 private:
