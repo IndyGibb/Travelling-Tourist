@@ -87,7 +87,7 @@ void storage::inputFile(string fileName) {
     ss << line;
     ss.ignore(9999, ',');
     ss.ignore(9999, ',');
-    ss >> cityName;
+    getline(ss, cityName);
     city newCity(cityName, 100);
     inputCity(newCity);
     do {
@@ -95,10 +95,12 @@ void storage::inputFile(string fileName) {
         getline(fin, line);
         ss.clear();
         ss << line;
-        ss >> cityName;
+        getline(ss, cityName, ',');
         c = ss.peek();
         if (!(tolower(c) > 'a' && tolower(c) < 'z')) {
-            ss >> cityCost;
+            string strCityCost;
+            getline(ss, strCityCost);
+			cityCost = stod(strCityCost);
             city newCity(cityName, cityCost);
             inputCity(newCity);
         }
@@ -113,11 +115,12 @@ void storage::inputFile(string fileName) {
         getline(fin, line);
         ss.clear();
         ss << line;
-        ss >> cityName;
+        getline(ss, cityName, ',');
         c = ss.peek();
         if (tolower(c) > 'a' && tolower(c) < 'z') {
-            ss >> cityBName;
-            ss >> distance;
+            getline(ss, cityBName, ',');
+			string strDistance;
+            getline(ss, strDistance);
             connectRoads(getCity(cityName), getCity(cityBName));
             road newRoad(getCity(cityName), getCity(cityBName), distance);
 			inputRoad(newRoad);
