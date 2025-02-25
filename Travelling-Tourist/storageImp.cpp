@@ -79,7 +79,6 @@ int storage::getRoadLocation(city city1, city city2) {
 }
 void storage::inputFile(string fileName) {
     ifstream fin(fileName);
-    stringstream ss;
     string line, cityName, cityBName;
     char c;
     double cityCost, distance;
@@ -93,11 +92,11 @@ void storage::inputFile(string fileName) {
     do {
 		
         getline(fin, line);
-		stringstream ss(line);
-        ss << cityName;
-        c = ss.peek();
+		stringstream ss2(line);
+        ss2 << cityName;
+        c = ss2.peek();
         if (!(tolower(c) > 'a' && tolower(c) < 'z')) {
-            ss << cityCost;
+            ss2 << cityCost;
             city newCity(cityName, cityCost);
             inputCity(newCity);
         }
