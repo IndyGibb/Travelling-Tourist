@@ -89,7 +89,7 @@ void storage::inputFile(string fileName) {
     ss.ignore(9999, ',');
     ss.ignore(9999, ',');
     getline(ss, cityName);
-    city newCity(cityName, 100);
+    city newCity(cityName, 0);
     inputCity(newCity);
     do {
 		
