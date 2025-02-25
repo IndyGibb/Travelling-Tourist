@@ -9,7 +9,7 @@ Los Angeles,New York,5.5
 New York,Chicago,3.0
 Chicago,New York,3.0
 Los Angeles,Chicago,4.0
-Chicago,LosAngeles,4.0
+Chicago,Los Angeles,4.0
 New York,Boston,2.5
 Boston,New York,2.5
 Chicago,Houston,4.5
