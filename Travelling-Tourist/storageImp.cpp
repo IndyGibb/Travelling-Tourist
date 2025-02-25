@@ -121,6 +121,7 @@ void storage::inputFile(string fileName) {
             getline(ss, cityBName, ',');
 			string strDistance;
             getline(ss, strDistance);
+            distance = stod(strDistance);
             connectRoads(getCity(cityName), getCity(cityBName));
             road newRoad(getCity(cityName), getCity(cityBName), distance);
 			inputRoad(newRoad);
