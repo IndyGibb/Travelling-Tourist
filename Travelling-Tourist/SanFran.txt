@@ -1,13 +1,16 @@
-7,1500,San Francisco
-San Francisco,Seattle,2.5
+10,3000,San Francisco
 Seattle,200
-San Francisco,Las Vegas,1.5
-Seattle,Las Vegas,3.0
-Denver,140
-San Francisco,Denver,4.0
-Las Vegas,Denver,2.5
 Las Vegas,120
-Seattle,Portland,1.5
-Denver,Portland,3.5
+Denver,140
 Portland,160
-Las Vegas,Portland,4.0
+Phoenix,180
+San Francisco,Seattle,7.5
+San Francisco,Las Vegas,4.5
+Seattle,Las Vegas,6.5
+San Francisco,Denver,8.0
+Las Vegas,Denver,6.0
+Seattle,Portland,3.5
+Denver,Portland,7.5
+Las Vegas,Portland,7.0
+Denver,Phoenix,7.5
+Portland,Phoenix,8.0
