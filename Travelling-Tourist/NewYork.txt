@@ -1,0 +1,12 @@
+5,1000,New York
+Los Angeles,180
+New York,Los Angeles,5.5
+Chicago,150
+Boston,130
+Los Angeles,Chicago,4.0
+Los Angeles,Houston,6.0
+Houston,170
+New York,Chicago,3.0
+New York,Boston,2.5
+Chicago,Houston,4.5
+Boston,Chicago,3.5
