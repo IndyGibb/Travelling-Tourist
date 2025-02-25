@@ -79,24 +79,26 @@ int storage::getRoadLocation(city city1, city city2) {
 }
 void storage::inputFile(string fileName) {
     ifstream fin(fileName);
+    stringstream ss;
     string line, cityName, cityBName;
     char c;
     double cityCost, distance;
     getline(fin, line);
-    stringstream ss(line);
+    ss << line;
     ss.ignore(9999, ',');
     ss.ignore(9999, ',');
-    ss << cityName;
+    ss >> cityName;
     city newCity(cityName, 100);
     inputCity(newCity);
     do {
 		
         getline(fin, line);
-		stringstream ss2(line);
-        ss2 << cityName;
-        c = ss2.peek();
+        ss.clear();
+        ss << line;
+        ss >> cityName;
+        c = ss.peek();
         if (!(tolower(c) > 'a' && tolower(c) < 'z')) {
-            ss2 << cityCost;
+            ss >> cityCost;
             city newCity(cityName, cityCost);
             inputCity(newCity);
         }
@@ -109,14 +111,13 @@ void storage::inputFile(string fileName) {
     getline(fin, line);
     do {
         getline(fin, line);
-        stringstream ss(line);
-        ss << cityName;
+        ss.clear();
+        ss << line;
+        ss >> cityName;
         c = ss.peek();
         if (tolower(c) > 'a' && tolower(c) < 'z') {
-            ss << cityBName;
-            ss << distance;
-			
-			
+            ss >> cityBName;
+            ss >> distance;
             connectRoads(getCity(cityName), getCity(cityBName));
             road newRoad(getCity(cityName), getCity(cityBName), distance);
 			inputRoad(newRoad);
