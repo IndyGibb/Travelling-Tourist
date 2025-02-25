@@ -127,10 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\MidtermProject.cpp" />
     <ClCompile Include="cityImp.cpp" />
     <ClCompile Include="journeyImp.cpp" />
     <ClCompile Include="journeyTest.cpp" />
+    <ClCompile Include="MidtermProject.cpp" />
     <ClCompile Include="roadImp.cpp" />
     <ClCompile Include="storageImp.cpp" />
     <ClCompile Include="Travelling-Tourist.cpp" />
