@@ -94,7 +94,7 @@ void storage::inputFile(string fileName) {
     do {
 		
         getline(fin, line);
-        ss.clear();
+        ss.str("");
         ss << line;
         getline(ss, cityName, ',');
         c = ss.peek();
@@ -114,7 +114,7 @@ void storage::inputFile(string fileName) {
     getline(fin, line);
     do {
         getline(fin, line);
-        ss.clear();
+        ss.str("");
         ss << line;
         getline(ss, cityName, ',');
         c = ss.peek();
