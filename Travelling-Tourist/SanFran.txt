@@ -1,0 +1,13 @@
+7,1500,San Francisco
+San Francisco,Seattle,2.5
+Seattle,200
+San Francisco,Las Vegas,1.5
+Seattle,Las Vegas,3.0
+Denver,140
+San Francisco,Denver,4.0
+Las Vegas,Denver,2.5
+Las Vegas,120
+Seattle,Portland,1.5
+Denver,Portland,3.5
+Portland,160
+Las Vegas,Portland,4.0
