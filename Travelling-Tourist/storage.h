@@ -32,6 +32,7 @@ private:
 	int lines; // Number of lines in the file.
 	int getCityLocation(string cityName); // Function to get the location of a city in the vector.
 	int getRoadLocation(city city1, city city2); // Function to get the location of a road in the vector.
+	void connectRoads(city& city1, city& city2); // Function to connect roads.
 };
 
 #endif // STORAGE_H

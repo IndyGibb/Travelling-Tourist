@@ -22,7 +22,9 @@ city::city(string name, double cost) {
 }
 
 void city::addConnectedCity(city newCity) {
-	connectedCities.push_back(newCity);
+	if (!isCityConnected(newCity.getCityName())) {
+		connectedCities.push_back(newCity.getCityName());
+	}
 }
 
 string city::getCityName() const {
@@ -35,7 +37,7 @@ double city::getCostToStay() const {
 
 bool city::isCityConnected(string cityName) const {
 	for (int i = 0; i < connectedCities.size(); i++) {
-		if (connectedCities[i].getCityName() == cityName) {
+		if (connectedCities[i] == cityName) {
 			return true;
 		}
 	}

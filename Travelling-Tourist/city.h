@@ -26,7 +26,7 @@ public:
 private:
 	string cityName; // holds the name of this city
 	double costToStay; // holds the name of the cost to stay in this city
-	vector<city> connectedCities; // holds a list of cities that are connected to this city
+	vector<string> connectedCities; // holds a list of cities that are connected to this city
 };
 
 #endif CITY_H

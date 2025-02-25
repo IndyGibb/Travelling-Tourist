@@ -116,9 +116,21 @@ void storage::inputFile(string fileName) {
         if (tolower(c) > 'a' && tolower(c) < 'z') {
             ss << cityBName;
             ss << distance;
+            connectRoads(getCity(cityName), getCity(cityBName));
             road newRoad(getCity(cityName), getCity(cityBName), distance);
+			inputRoad(newRoad);
         }
 	} while (!fin.eof());
     fin.close();
     return;
+}
+
+void storage::connectRoads(city& city1, city& city2) {
+    if (!city1.isCityConnected(city2)) {
+        city1.addConnectedCity(city2);
+    }
+	if (!city2.isCityConnected(city1)) {
+		city2.addConnectedCity(city1);
+	}
+	return;
 }
