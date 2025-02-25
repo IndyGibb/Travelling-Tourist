@@ -11,12 +11,12 @@ using namespace std;
 
 storage::storage() {
     lines = 0;
-	cout << "Storage created" << endl;
+	// cout << "Storage created" << endl;
     return;
 }
 
 storage::~storage() {
-	cout << "Storage was destroyed" << endl;
+	// cout << "Storage was destroyed" << endl;
 	return;
 }
 

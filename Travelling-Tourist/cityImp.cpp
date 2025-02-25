@@ -8,17 +8,17 @@ using namespace std;
 city::city() {
 	cityName = "";
 	costToStay = 0;
-	cout << "Default city created" << endl;
+	// cout << "Default city created" << endl;
 }
 
 city::~city() {
-	cout << "City " << cityName << " was bombed" << endl;
+	// cout << "City " << cityName << " was bombed" << endl;
 }
 
 city::city(string name, double cost) {
 	cityName = name;
 	costToStay = cost;
-	cout << "City " << cityName << " created with cost " << costToStay << endl;
+	// cout << "City " << cityName << " created with cost " << costToStay << endl;
 }
 
 void city::addConnectedCity(city newCity) {

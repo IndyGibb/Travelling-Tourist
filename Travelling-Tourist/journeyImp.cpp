@@ -1,11 +1,11 @@
 #include "Journey.h"
 
 Journey::Journey() : totalCost(0), totalTime(0) {
-	cout << "Journey created with total cost " << totalCost << "and total time " << totalTime << endl;
+	// cout << "Journey created with total cost " << totalCost << "and total time " << totalTime << endl;
 }
 
 Journey::~Journey() {
-	cout << "Journey was ended" << endl;
+	// cout << "Journey was ended" << endl;
 }
 
 void Journey::addDestination(const string& name, double cost, int travelTime) {
