@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <fstream>
 #include <sstream>
+#include <ctype.h>
 
 using std::string;
 using std::vector;
@@ -97,7 +98,7 @@ void storage::inputFile(string fileName) {
         ss << line;
         getline(ss, cityName, ',');
         c = ss.peek();
-        if (!(tolower(c) > 'a' && tolower(c) < 'z')) {
+        if (isdigit(c)) {
             string strCityCost;
             getline(ss, strCityCost);
 			cityCost = stod(strCityCost);
@@ -117,7 +118,7 @@ void storage::inputFile(string fileName) {
         ss << line;
         getline(ss, cityName, ',');
         c = ss.peek();
-        if (tolower(c) > 'a' && tolower(c) < 'z') {
+        if (isalpha(c)) {
             getline(ss, cityBName, ',');
 			string strDistance;
             getline(ss, strDistance);
