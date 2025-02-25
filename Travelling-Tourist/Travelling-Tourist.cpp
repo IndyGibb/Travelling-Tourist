@@ -31,7 +31,7 @@ int findMinDistanceCity(const vector<int>& time, const vector<bool>& visited) {
 }
 
 // Dijkstra's algorithm utilizing the Journey, city, and road class
-void dijkstra(city& startCity, double maxBudget, int maxDays, storage& storageObj) {
+void dijkstra(city& startCity, double maxBudget, double maxDays, storage& storageObj) {
     vector<city> cities = { startCity };  // Start city
     vector<road> roads;  // Roads between cities
     Journey journey;
@@ -46,7 +46,7 @@ void dijkstra(city& startCity, double maxBudget, int maxDays, storage& storageOb
             if (cityIndex.find(storageObj.getCity(connectedCity).getCityName()) == cityIndex.end()) {
                 cityIndex[storageObj.getCity(connectedCity).getCityName()] = cities.size();
                 cities.push_back(storageObj.getCity(connectedCity));
-                roads.push_back(road(cities[i], storageObj.getCity(connectedCity), 8)); // Example: 8 hours of travel
+                roads.push_back(road(cities[i], storageObj.getCity(connectedCity), storageObj.getRoad(cities[i], storageObj.getCity(connectedCity)).getTravelTime())); // Example: 8 hours of travel
             }
         }
     }
@@ -108,6 +108,29 @@ string getStartCity(string filename) {
 	return startCity;
 }
 
+double getBudget(string filename) {
+    ifstream fin(filename);
+    string line;
+    getline(fin, line);
+    stringstream ss(line);
+    string budget;
+    ss.ignore(999, ',');
+    getline(ss, budget, ',');
+    double budgetD = stod(budget);
+    return budgetD;
+}
+
+double getMaxDays(string filename) {
+    ifstream fin(filename);
+    string line;
+    getline(fin, line);
+    stringstream ss(line);
+    string maxDays;
+    getline(ss, maxDays, ',');
+	double maxDaysD = stod(maxDays);
+	return maxDaysD;
+}
+
 int main() {
     storage storageObj;
     string filename;
@@ -118,8 +141,8 @@ int main() {
     // Example input: New York city will be used as the starting point
     city startCity = storageObj.getCity(getStartCity(filename));
 
-    double maxBudget = 300;
-    int maxDays = 5;
+    double maxBudget = getBudget(filename);
+    double maxDays = getMaxDays(filename);
 
     // Start the journey optimization
     dijkstra(startCity, maxBudget, maxDays, storageObj);
