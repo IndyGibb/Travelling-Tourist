@@ -1,15 +1,18 @@
-10,2000,Miami
-Atlanta,130
-Miami,Orlando,2.0
+12,4000,Miami
 Orlando,100
-Miami,Atlanta,5.0
-Orlando,New Orleans,4.5
-Atlanta,New Orleans,3.5
-Orlando,Tampa,1.5
-Tampa,Atlanta,4.0
-Charlotte,140
-Tampa,Charlotte,3.0
-Tampa,120
-Atlanta,Charlotte,2.5
+Atlanta,130
 New Orleans,160
-New Orleans,Charlotte,5.0
+Tampa,120
+Charlotte,140
+Nashville,180
+Miami,Orlando,3.0
+Miami,Atlanta,8.0
+Orlando,New Orleans,6.5
+Atlanta,New Orleans,5.5
+Orlando,Tampa,2.5
+Tampa,Atlanta,7.0
+Tampa,Charlotte,5.5
+Atlanta,Charlotte,4.0
+New Orleans,Charlotte,7.5
+Charlotte,Nashville,6.5
+Atlanta,Nashville,4.5
