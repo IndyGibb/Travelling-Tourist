@@ -142,10 +142,10 @@
     <ClInclude Include="storage.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\MidtermProjectSampleInput.txt" />
+    <None Include="MidtermProject.pdf" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MidtermProject.pdf" />
+    <Text Include="MidtermProjectSampleInput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
