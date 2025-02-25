@@ -31,7 +31,7 @@ int findMinDistanceCity(const vector<int>& time, const vector<bool>& visited) {
 }
 
 // Dijkstra's algorithm utilizing the Journey, city, and road class
-void dijkstra(city& startCity, double maxBudget, double maxDays, storage& storageObj) {
+Journey dijkstra(city& startCity, double maxBudget, double maxDays, storage& storageObj) {
     vector<city> cities = { startCity };  // Start city
     vector<road> roads;  // Roads between cities
     Journey journey;
@@ -92,8 +92,7 @@ void dijkstra(city& startCity, double maxBudget, double maxDays, storage& storag
         }
     }
 
-    // Display the results
-    journey.displayJourney();
+    return journey;
 }
 
 string getStartCity(string filename) {
@@ -145,7 +144,8 @@ int main() {
     double maxDays = getMaxDays(filename);
 
     // Start the journey optimization
-    dijkstra(startCity, maxBudget, maxDays, storageObj);
+    Journey journey = dijkstra(startCity, maxBudget, maxDays, storageObj);
 
+	journey.displayJourney();
     return 0;
 }
