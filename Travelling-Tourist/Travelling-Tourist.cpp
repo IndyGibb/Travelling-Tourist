@@ -42,10 +42,10 @@ void dijkstra(city& startCity, double maxBudget, int maxDays, storage& storageOb
     // Collect all cities and their connections
     for (int i = 0; i < cities.size(); ++i) {
         for (auto& connectedCity : cities[i].getConnectedCities()) {
-            if (cityIndex.find(connectedCity.getCityName()) == cityIndex.end()) {
-                cityIndex[connectedCity.getCityName()] = cities.size();
-                cities.push_back(connectedCity);
-                roads.push_back(road(cities[i], connectedCity, 8)); // Example: 8 hours of travel
+            if (cityIndex.find(storageObj.getCity(connectedCity).getCityName()) == cityIndex.end()) {
+                cityIndex[storageObj.getCity(connectedCity).getCityName()] = cities.size();
+                cities.push_back(storageObj.getCity(connectedCity));
+                roads.push_back(road(cities[i], storageObj.getCity(connectedCity), 8)); // Example: 8 hours of travel
             }
         }
     }
