@@ -104,7 +104,7 @@ string getStartCity(string filename) {
 	string startCity;
     ss.ignore(999, ',');
 	ss.ignore(999, ',');
-	ss >> startCity;
+    getline(ss, startCity);
 	return startCity;
 }
 
