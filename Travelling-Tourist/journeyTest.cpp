@@ -3,7 +3,7 @@
 
 using namespace std;
 
-main() {
+int main() {
 	Journey journey;
 	journey.addDestination("Paris", 100, 2);
 	journey.addDestination("London", 200, 3);

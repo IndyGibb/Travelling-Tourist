@@ -31,20 +31,20 @@ int storage::lineCounter(const string fileName) {
 
     return number_of_lines;
 }
-road storage::getRoad(int a) {
+road& storage::getRoad(int a) {
 	return roadV[a];
 }
 
-road storage::getRoad(city cityA, city cityB) {
+road& storage::getRoad(city cityA, city cityB) {
 	int location = getRoadLocation(cityA, cityB);
     return getRoad(location);
 }
 
-city storage::getCity(int b) {
+city& storage::getCity(int b) {
 	return cityV[b];
 }
 
-city storage::getCity(string cityName) {
+city& storage::getCity(string cityName) {
 	int location = getCityLocation(cityName);
 	return getCity(location);
 }
@@ -116,6 +116,8 @@ void storage::inputFile(string fileName) {
         if (tolower(c) > 'a' && tolower(c) < 'z') {
             ss << cityBName;
             ss << distance;
+			
+			
             connectRoads(getCity(cityName), getCity(cityBName));
             road newRoad(getCity(cityName), getCity(cityBName), distance);
 			inputRoad(newRoad);

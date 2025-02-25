@@ -19,10 +19,10 @@ public:
 
 	void inputCity(city newCity); // Function to input a city into a vector
 	void inputRoad(road newRoad); // Function to input a road into a vector
-	city getCity(int); // Function to return cities.
-	city getCity(string cityName);
-	road getRoad(int); // Function to return roads.
-	road getRoad(city city1, city city2);
+	city& getCity(int); // Function to return cities.
+	city& getCity(string cityName);
+	road& getRoad(int); // Function to return roads.
+	road& getRoad(city city1, city city2);
 	int lineCounter(const string); // Function to count the # of lines in the file.
 	void inputFile(string); // Function to input data from a file
 
