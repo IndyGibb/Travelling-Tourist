@@ -6,6 +6,7 @@
 #include "city.h"
 #include "road.h"
 #include "storage.h"
+#include <sstream>
 
 //WHAT I STILL NEED: A function to detect if cities are connected and a function to get the name of the city.
 //I wasn't sure if that function should be in city or in storage. isCityConnected and getCityName were used as placeholders. 
@@ -95,6 +96,18 @@ void dijkstra(city& startCity, double maxBudget, int maxDays, storage& storageOb
     journey.displayJourney();
 }
 
+string getStartCity(string filename) {
+    ifstream fin(filename);
+    string line;
+	getline(fin, line);
+	stringstream ss(line);
+	string startCity;
+    ss.ignore(999, ',');
+	ss.ignore(999, ',');
+	ss >> startCity;
+	return startCity;
+}
+
 int main() {
     storage storageObj;
     string filename;
@@ -103,7 +116,7 @@ int main() {
     storageObj.inputFile(filename); // INPUTFILE NEEDS TO BE MADE
 
     // Example input: New York city will be used as the starting point
-    city startCity = storageObj.getCity("New York");
+    city startCity = storageObj.getCity(getStartCity(filename));
 
     double maxBudget = 300;
     int maxDays = 5;
