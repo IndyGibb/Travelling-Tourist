@@ -1,0 +1,15 @@
+10,2000,Miami
+Atlanta,130
+Miami,Orlando,2.0
+Orlando,100
+Miami,Atlanta,5.0
+Orlando,New Orleans,4.5
+Atlanta,New Orleans,3.5
+Orlando,Tampa,1.5
+Tampa,Atlanta,4.0
+Charlotte,140
+Tampa,Charlotte,3.0
+Tampa,120
+Atlanta,Charlotte,2.5
+New Orleans,160
+New Orleans,Charlotte,5.0
